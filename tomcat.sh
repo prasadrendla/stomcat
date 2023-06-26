@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt update
 sudo apt install zip -y
 sudo apt install openjdk-17-jre-headless -y 
 sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.76.zip
