@@ -5,6 +5,7 @@ sudo apt install openjdk-17-jre-headless -y
 sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.76/bin/apache-tomcat-9.0.76.zip
 sudo unzip apache-tomcat-9.0.76.zip
 sudo mv apache-tomcat-9.0.76 tomcat9
+sudo chown -R ubuntu:ubuntu tomcat9
 sudo chmod +x tomcat9/bin/*
 ./tomcat9/bin/startup.sh
 sudo sed -i '21,22 s/^/<!-- /; 21,22 s/$/ -->/' /home/ubuntu/tomcat9/webapps/manager/META-INF/context.xml
