@@ -16,8 +16,6 @@ sed -i '/<\/tomcat-users>/i \
 <role rolename="admin-gui"/>\
 <user username="manager" password="12345" roles="manager-gui"/>\
 <user username="admin" password="12345" roles="admin-gui"/>' /home/ubuntu/tomcat9/conf/tomcat-users.xml
-./tomcat9/bin/shutdown.sh
 ./tomcat9/bin/catalina.sh
 ./tomcat9/bin/shutdown.sh
 ./tomcat9/bin/startup.sh
-sudo systemctl restart apache2
